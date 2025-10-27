@@ -1,0 +1,105 @@
+/*
+ * Styles for the virtual toilet paper application. The layout is simple:
+ * a spool at the top, a scrollable roll area containing a series of sheets,
+ * and an empty spool/message when the paper runs out. The heights and
+ * dimensions here determine how the scroll calculation in App.jsx works.
+ */
+body {
+  background-color: black;
+  color: white; /* optional: make text visible */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative; /* enables .spool absolute positioning */
+  margin-top: 10%;
+}
+
+
+/* Decorative spool at the top of the page. This uses a radial gradient to
+ * approximate the look of a roll seen end-on. */
+.spool {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  height: 10rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 20%,     /* 20% down: lighter */
+  rgba(0, 0, 0, 0.2) 50% , transparent), #fdfdfd;
+  pointer-events: none;
+  z-index: 3;
+  margin-top: -1rem;
+}
+
+/* Scroll container */
+.roll {
+  width: 260px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: none;
+  position: relative;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  /* Pull the roll up slightly so the first sheet sits under the spool */
+  margin-top: -1rem;
+  margin-bottom: 10rem;
+  transform: rotate(180deg);
+}
+
+.roll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual sheet. The height must match the value used in the scroll
+ * calculation inside App.jsx. Borders and shadows are used to suggest
+ * separate pieces of paper. */
+.sheet {
+  width: 100%;
+  height: 140px;
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  border-bottom: 1px dashed #ccc;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  position: relative;
+  
+}
+
+.sheet:first-child {
+  border-radius: 5% 5% 0% 0%;;
+}
+
+/* Container displayed when the roll has run out. Centers the empty spool
+ * and message below it. */
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Appearance of the empty spool. Similar to the top spool, but slightly
+ * smaller and positioned within the scroll area. */
+.empty-spool {
+  width: 100px;
+  height: 60px;
+  background: radial-gradient(circle at center, #d4d4d4 0%, #aaa 70%, #888 100%);
+  border-radius: 50% 50% 40% 40%;
+  margin-bottom: 20px;
+}
+
+/* Message displayed once the user reaches the end of the roll. */
+.empty {
+  font-size: 24px;
+  color: #888;
+  text-align: center;
+}

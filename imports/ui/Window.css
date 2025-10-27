@@ -1,0 +1,9 @@
+html, body {
+  margin: 0;              /* remove default spacing */
+  padding: 0;
+  width: 100vw;           /* fill full window width */
+  height: 100vh;          /* fill full window height */
+  overflow: hidden;       /* hide all scrollbars */
+  background: black;      /* or whatever your background is */
+  color: white;
+}
