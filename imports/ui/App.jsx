@@ -4,6 +4,18 @@ import "./Window.css";
 
 const TOTAL_SHEETS = 10;
 const SHEET_HEIGHT = 140;
+const sheetTexts = [
+  "Don't forget to wash your hands!",
+  "You're doing great 💪",
+  "Stay hydrated 🧃",
+  "This sheet is absorbingly good.",
+  "Almost done here!",
+  "Keep scrolling...",
+  "Remember to smile 😊",
+  "Wipe out negativity!",
+  "Stay fresh, stay clean.",
+  "Last sheet! 🚽"
+];
 
 const App = () => {
   const [visibleStart, setVisibleStart] = useState(0);
@@ -33,7 +45,9 @@ const App = () => {
           position: "absolute",
           top: i * SHEET_HEIGHT, // ⬅ restore top positioning
         }}
-      ></div>
+      >
+        <p className="sheet-text">{sheetTexts[i]}</p>
+      </div>
     );
   }
 
