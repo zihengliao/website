@@ -1,21 +1,7 @@
-/*
- * Styles for the virtual toilet paper application. The layout is simple:
- * a spool at the top, a scrollable roll area containing a series of sheets,
- * and an empty spool/message when the paper runs out. The heights and
- * dimensions here determine how the scroll calculation in App.jsx works.
- */
 body {
-  background-color: black;
-  color: white; /* optional: make text visible */
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
+<<<<<<< Updated upstream
   position: relative; /* enables .spool absolute positioning */
   margin-top: 10%;
 }
@@ -140,26 +126,43 @@ svg {
 /* Container displayed when the roll has run out. Centers the empty spool
  * and message below it. */
 .empty-container {
+=======
+  background: #262626;
+  overflow: hidden;
+>>>>>>> Stashed changes
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  height: 100vh;
 }
 
-/* Appearance of the empty spool. Similar to the top spool, but slightly
- * smaller and positioned within the scroll area. */
-.empty-spool {
-  width: 100px;
-  height: 60px;
-  background: radial-gradient(circle at center, #d4d4d4 0%, #aaa 70%, #888 100%);
-  border-radius: 50% 50% 40% 40%;
-  margin-bottom: 20px;
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-/* Message displayed once the user reaches the end of the roll. */
-.empty {
-  font-size: 24px;
-  color: #888;
-  text-align: center;
+.wave-svg {
+  width: 80vw;
+  height: auto;
+  overflow: visible;
+}
+
+.animate-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  background: white;
+  color: #262626;
 }
