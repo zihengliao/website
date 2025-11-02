@@ -1,0 +1,23 @@
+.experience-section {
+  min-height: 100vh;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dadada;
+}
+
+.experience-section h2 {
+  color: #131313;
+  font-family: Roboto, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 7vh;
+}
+
+.experience-section p {
+  color: #131313;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+}
