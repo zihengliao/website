@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./Navbar.jsx";
 import Intro from "./Intro.jsx";
 import Experience from "./Experience.jsx";
+import Projects from "./Projects.jsx";
 import "./App.css";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <NavBar />
       <Intro />
       <Experience />
+      <Projects />
       
       {/* <section id="projects" className="projects-section">
         <h2>Projects</h2>
