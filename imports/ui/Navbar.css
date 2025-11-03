@@ -1,9 +1,14 @@
 .navbar {
   position: fixed;
   top: 0;
-  right: 0;
-  padding: 20px 40px;
+  left: 0;              /* ensure it starts from the left edge */
+  width: 100%;          /* make it stretch across the whole screen */
+  padding: 20px;
   z-index: 1000;
+  background-color: #262626; /* optional: make it visible across the top */
+  display: flex;         /* enable flexbox */
+  justify-content: flex-end; /* push the links to the right side */
+  align-items: center;   /* vertically center items */
 }
 
 .nav-links {
@@ -11,7 +16,7 @@
   list-style: none;
   gap: 30px;
   margin: 0;
-  padding: 0;
+  padding: 0 4em;
 }
 
 .nav-links li a {

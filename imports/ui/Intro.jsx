@@ -64,9 +64,9 @@ const Intro = () => {
           fontWeight="700"
         >
           <textPath ref={textPathRef} href="#wave-path" startOffset="100%">
-            Hi, I'm <tspan fill="#f1c40f">Ziheng</tspan>! Welcome to my portfolio
-            <tspan fontSize="25">o</tspan>
-            <tspan fontSize="15">o</tspan>
+            Hi, I'm <tspan fill="#f1c40f">Ziheng</tspan>! Welcome to my website
+            <tspan fontSize="25">e</tspan>
+            <tspan fontSize="15">e</tspan>
           </textPath>
         </text>
       </svg>
