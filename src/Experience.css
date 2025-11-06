@@ -1,0 +1,197 @@
+.experience-section {
+  min-height: 100vh;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FBFEF9;
+}
+
+.experience-section h2 {
+  color: #262626;
+  font-family: Roboto, sans-serif;
+  font-size: 4.5em;
+  font-weight: 900;
+  margin-bottom: 80px;
+  margin-top: 7vh;
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #000000;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.timeline-item.left {
+  justify-content: flex-start;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+}
+
+.timeline-content {
+  width: 48%;
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+  border: 5px solid #000000;
+}
+
+.timeline-item.left .timeline-content {
+  background-color: #7FB069;
+  margin-right: calc(50% + 100px);
+}
+
+.timeline-item.right .timeline-content {
+  background-color: #E6AA68;
+  margin-left: calc(50% + 100px);
+}
+
+.timeline-content h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.timeline-item.left .timeline-content h3 {
+  color: #02020B;
+}
+
+.timeline-item.right .timeline-content h3 {
+  color: #02020B;
+}
+
+.timeline-content h4 {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+}
+
+.timeline-item.left .timeline-content h4 {
+  color: #02020B;
+}
+
+.timeline-item.right .timeline-content h4 {
+  color: #02020B;
+}
+
+.technologies {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  margin: 0 0 16px 0;
+  font-weight: 500;
+}
+
+.timeline-item.left .technologies {
+  color: #02020B;
+}
+
+.timeline-item.right .technologies {
+  color: #000000;
+}
+
+.achievements p {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.timeline-item.left .achievements p {
+  color: #02020B;
+}
+
+.timeline-item.right .achievements p {
+  color: #000000;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: #2196F3;
+  border: 4px solid #02020B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.dot-icon {
+  font-size: 28px;
+}
+
+.timeline-date {
+  position: absolute;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #02020B;
+  white-space: nowrap;
+}
+
+.timeline-item.left .timeline-date {
+  left: calc(50% + 80px);
+}
+
+.timeline-item.right .timeline-date {
+  right: calc(50% + 80px);
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .timeline-item.left,
+  .timeline-item.right {
+    justify-content: flex-start;
+  }
+  
+  .timeline-content {
+    width: calc(100% - 80px);
+    margin-left: 80px !important;
+    margin-right: 0 !important;
+  }
+  
+  .timeline-dot {
+    left: 30px;
+  }
+  
+  .timeline-date {
+    position: static;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+}
