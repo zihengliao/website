@@ -1,14 +1,31 @@
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;              /* ensure it starts from the left edge */
-  width: 100%;          /* make it stretch across the whole screen */
+  left: 0;
+  width: 100%;
   padding: 20px;
   z-index: 1000;
-  background-color: #262626; /* optional: make it visible across the top */
-  display: flex;         /* enable flexbox */
-  justify-content: flex-end; /* push the links to the right side */
-  align-items: center;   /* vertically center items */
+  background-color: #262626;
+  display: flex;
+  justify-content: space-between; /* space between left and right sections */
+  align-items: center;
+}
+
+.nav-home {
+  padding: 0 4em;
+}
+
+.nav-home a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nav-home a:hover {
+  color: #f1c40f;
 }
 
 .nav-links {
