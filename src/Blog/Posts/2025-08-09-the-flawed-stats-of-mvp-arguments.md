@@ -122,18 +122,19 @@ Nikola Jokic has a negatively correlating USG% whilst SGA is positively correlat
 Looking at the stat that correlates the most to winning, DRtg (Defensive Rating) and its close cousin, ORtg (Offensive Rating). For both players, reducing the amount of the opposing team's points is more impactful than scoring more points. Maybe Nico Harrison was onto something when he said "defence wins championships".
 
 | Defensive Rating | Offensive Rating |
-|---------|---------|
-| ![SGA drtg vs winning]({{ '/assets/graphs/the_flawed_stats_of_mvp_arguments/sga_drtg.png' | relative_url }}) | ![SGA ortg vs winning]({{ '/assets/graphs/the_flawed_stats_of_mvp_arguments/sga_ortg.png' | relative_url }}) |
-| ![Jokiv drtg vs winning]({{ '/assets/graphs/the_flawed_stats_of_mvp_arguments/nikola_jokic_drtg.png' | relative_url }}) | ![Jokic minutes vs winning]({{ '/assets/graphs/the_flawed_stats_of_mvp_arguments/jokic_ortg.png' | relative_url }}) |
+|------------------|------------------|
+| ![SGA drtg vs winning](/assets/blog/2025-08-09-the-flawed-stats-of-mvp-arguments/sga_drtg.png) | ![SGA ortg vs winning](/assets/blog/2025-08-09-the-flawed-stats-of-mvp-arguments/sga_ortg.png) |
+| ![Jokic drtg vs winning](/assets/blog/2025-08-09-the-flawed-stats-of-mvp-arguments/nikola_jokic_drtg.png) | ![Jokic ortg vs winning](/assets/blog/2025-08-09-the-flawed-stats-of-mvp-arguments/jokic_ortg.png) |
+
 
 <br>
 
 Another notable stat is that the minutes played is negatively correlated to winning. At first the logical statement to make is that these players are so cheeks that when they spend time on the court, they are actively dragging the team down. However, from context we know that this is incorrect. During the regular season, teams tend to sit star players out early when winning by a large margin to reduce likelihood of injury. Therefore the correct statement to make here is that rather than contributing to winning by playing less, they tend to play less when winning.
 
 | SGA Time vs Wins | Jokic Time vs Wins |
-|---------|---------|
-| ![SGA minutes vs winning]({{ '/assets/graphs/the_flawed_stats_of_mvp_arguments/sga_minutes.png' | relative_url }}) | ![Jokic minutes vs winning]({{ '/assets/graphs/the_flawed_stats_of_mvp_arguments/jokic_minutes.png' | relative_url }}) |
-|---------|---------|
+|------------------|--------------------|
+| ![SGA minutes vs winning](/assets/blog/2025-08-09-the-flawed-stats-of-mvp-arguments/sga_minutes.png) | ![Jokic minutes vs winning](/assets/blog/2025-08-09-the-flawed-stats-of-mvp-arguments/jokic_minutes.png) |
+
 
 <br>
 

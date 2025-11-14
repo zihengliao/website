@@ -6,6 +6,7 @@ import Experience from "./Experience.jsx";
 import Projects from "./Projects.jsx";
 import Contact from './Contact.jsx';
 import Blog from './Blog/Blog.jsx';
+import BlogPost from './Blog/BlogPost.jsx';
 import "./App.css";
 
 const HomePage = () => {
@@ -27,6 +28,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
         </Routes>
       </div>
     </Router>
