@@ -70,12 +70,13 @@ const Blog = () => {
           <p>No blog posts found.</p>
         ) : (
           blogPosts.map((post) => (
-            <div key={post.id} className="blog-post-card">
-              {post.date && <p className="blog-date">{post.date}</p>}
-              <h2>
-                <Link to={`/blog/${post.id}`}>{post.title}</Link>
-              </h2>
-            </div>
+            <Link to={`/blog/${post.id}`} className="blog-post-card-link">
+              <div className="blog-post-card">
+                {post.date && <p className="blog-date">{post.date}</p>}
+                <h2>{post.title}</h2>
+              </div>
+            </Link>
+
           ))
         )}
       </div>

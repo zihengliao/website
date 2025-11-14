@@ -1,0 +1,96 @@
+/* --- Blog List Container --- */
+.blog-list-container {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: "Inter", sans-serif;
+  color: #f3f3f3;
+}
+
+/* Blog Title */
+.blog-list-container h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* --- Individual Blog Cards --- */
+.blog-post-card {
+  background: #1f1f1f; /* soft dark grey */
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  transition: transform 0.15s ease, background 0.2s ease;
+  cursor: pointer;
+}
+
+.blog-post-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* makes the whole link act like a block container */
+}
+
+
+/* Hover effect */
+.blog-post-card:hover {
+  background: #292929;
+  transform: translateY(-3px);
+}
+
+/* Blog date */
+.blog-date {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+
+/* Blog title (inside card) */
+.blog-post-card h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Title link styling */
+.blog-post-card a {
+  color: #f3f3f3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.blog-post-card a:hover {
+  color: #6bb8ff; /* subtle blue */
+}
+
+/* --- Mobile friendliness --- */
+@media (max-width: 700px) {
+  .blog-list-container h1 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .blog-post-card {
+    padding: 18px;
+  }
+
+  .blog-post-card h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .blog-list-container {
+    padding: 0 16px;
+  }
+
+  .blog-post-card {
+    padding: 16px;
+  }
+
+  .blog-post-card h2 {
+    font-size: 18px;
+  }
+}
