@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Intro.css";
 
 const Intro = () => {
+  const [showGlasses, setShowGlasses] = useState(false);
+
+  const toggleGlasses = () => {
+    setShowGlasses(!showGlasses);
+  };
+  
   return (
     <div className="intro-container">
 
       {/* Profile Image */}
-      <div className="intro-image-container">
+      <div className="intro-image-container" onClick={toggleGlasses}>
         <img
           src="/assets/profile.jfif"
           alt="Ziheng Liao"
           className="intro-image"
+        />
+
+        <img
+          src="/assets/sunglasses.png"
+          className={`sunglasses ${showGlasses ? "visible" : ""}`}
+          alt="sunglasses overlay"
         />
       </div>
 

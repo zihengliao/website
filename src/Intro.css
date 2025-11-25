@@ -47,13 +47,34 @@
   overflow: hidden;
   border: 6px solid #f1c40f;
   margin-bottom: 38px;
+  position: relative;
+  cursor: pointer;
 }
 
 .intro-image {
-  width: 100%;
-  height: 100%;
+  width: 105%;
+  height: 105%;
   object-fit: cover;
-  margin-left: 6px;
+}
+
+.sunglasses {
+  position: absolute;
+  top: 25%;              /* relative to the profile image height */
+  left: 50%;             /* stays centered */
+  width: 35%;            /* scales with the profile image */
+  transform: translate(-50%, -40%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+
+  transition: 
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.sunglasses.visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 /* Main intro text */
