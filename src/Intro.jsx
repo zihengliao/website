@@ -16,7 +16,7 @@ const Intro = () => {
 
       {/* Text */}
       <h1 className="intro-text">
-        Hey, I'm <span className="highlight">Ziheng Liao.</span>
+        Hey, I'm <span className="highlight name-drop">Ziheng Liao.</span>
         <br />
         <span className="subtext">
           I’m a software engineer focused on machine learning and data science, 

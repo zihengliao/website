@@ -16,6 +16,29 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.name-drop {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: dropIn 0.9s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(8px); /* slight overshoot for natural motion */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Profile circle */
 .intro-image-container {
   width: 320px;
