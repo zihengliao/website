@@ -31,9 +31,8 @@ const Intro = () => {
         Hey, I'm <span className="highlight name-drop">Ziheng Liao.</span>
         <br />
         <span className="subtext">
-          I’m a software engineer focused on machine learning and data science, 
-          with a love for solving interesting problems and trying out new ideas. 
-          I mix solid engineering with a healthy dose of curiosity.
+          I’m a software engineer with an interest in machine learning and data science. 
+          I enjoy tracking down bugs, fixing them, and occasionally introducing a few new ones along the way.
         </span>
       </h1>
     </div>
