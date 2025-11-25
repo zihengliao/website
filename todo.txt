@@ -1,7 +1,0 @@
-- fix up profile on website
-- draft blog idea
-- make it adaptable to mobile
-
-
-big plan:
-- cover letter generator
