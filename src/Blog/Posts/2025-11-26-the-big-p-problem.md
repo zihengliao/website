@@ -23,7 +23,7 @@ The image contains a sampling distribution of 20th order polynomial fitted to da
 
 Ok, but what does this have anything to do with *big P*?
 
-Well interestingly, when the number of parameters we have increae, each point eventually becomes a boundary point.
+Well interestingly, when the number of parameters we have increase, each point eventually becomes a boundary point.
 
 Let's prove it.
 
@@ -56,7 +56,7 @@ Therefore stating that every point eventually lies within the boundary.
 
 Why does this matter and what can we do about it?
 
-It matters in the sense that if we try to fit a model with a large amount of parameters, we become less confident in our model and becomes impossible to interpret. And depending on the problem at hand as well, this may or may not be a deal breaker. 
+It matters in the sense that if we try to fit a model with a large amount of parameters, we become less confident in our model and becomes impossible to interpret. And depending on the problem at hand as well, interpretability may or may not be a deal breaker. That said, if the model is unreliable, it's probably better to abandon it and consider an alternative approach.
 
 The most popular and what is traditionally done is with regularisation techniques whether it be with the Ridge or the Lasso or forms of them to reduce the amount of parameters we use.
 
