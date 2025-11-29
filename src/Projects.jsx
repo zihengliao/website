@@ -23,6 +23,13 @@ const Projects = () => {
       title: "News Insight AI",
       subtitle: "AI that searches and summarises news for you",
       link: "https://github.com/zihengliao/Agentic_workflow"
+    },
+    {
+      id: 4,
+      icon: "/assets/pollen_heatmap.png",
+      title: "Pollen Forecast",
+      subtitle: "Real-time pollen forecasts with interactive heatmaps.",
+      link: "https://github.com/zihengliao/pollen-forecast"
     }
   ];
 
