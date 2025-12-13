@@ -19,4 +19,4 @@ And sure enough after a quick google search I can see that it immediately is not
 
 **Concluding statement**
 
-Everybody knows this by now but you can't and shouldn't trust AI to do your work for you. Looking at you Deloitte.
+Everybody knows this by now but you can't and shouldn't trust AI to do your work for you.
