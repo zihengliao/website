@@ -15,15 +15,15 @@ Because we're software people here, we will approach this from the lens of a sof
 
 So from a programmer's point of view, threads in GPUs are organised in the following way:
 
-At the bottom of the hierarchy, we have individual "**threads**". These are the things that execute the task we specify it to. Each thread has an identifier so it knows which portion of the data it is responsible for processing. 
+At the bottom of the hierarchy, we have individual <span style="color: #f1c40f;">threads</span>. These are the things that execute the task we specify it to. Each thread has an identifier so it knows which portion of the data it is responsible for processing. 
 
-Threads are then bundled into "**blocks**". Threads within a block share the same memory coined "shared memory" - creative I know. Each block also has an idenitfier similar to threads.
+Threads are then bundled into <span style="color: #f1c40f;">blocks</span>. Threads within a block share the same memory coined "shared memory" - creative I know. Each block also has an idenitfier similar to threads.
 
-Finally these blocks are organised within a "**grid**". The grid serves no purpose other than a form of abstraction to make communicating to the hardware easier.
+Finally these blocks are organised within a <span style="color: #f1c40f;">grid</span>. The grid serves no purpose other than a form of abstraction to make communicating to the hardware easier.
 
 Now, telling the hardware how many threads and blocks we want the GPU to use is surprisingly easy. We first define a function that we wish the GPU to run by giving it the \_\_global\_\_ specifier which tells the compiler to run this on the GPU. All code that runs on the GPU have to have this specifier. This special function has also given a special name by us called a *kernel*.
 
-So all code is run by the CPU which we will call "host" unless specified in the program through the \_\_global\_\_ specifier! This is very important to know!
+So all code is run by the CPU which we will call <span style="color: #f1c40f;">host</span> unless specified in the program through the \_\_global\_\_ specifier! This is very important to know!
 
 ![CUDA_thread_hierarchy](/assets/blog/2025-12-12-hello_world_of_cuda/cuda_grid_of_thread_blocks.png)[^1]
 
