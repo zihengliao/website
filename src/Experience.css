@@ -13,7 +13,7 @@
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 900;
   margin-bottom: 80px;
-  margin-top: 7vh;
+  margin-top: 5vh;
 }
 
 .timeline-container {
@@ -59,12 +59,12 @@
 }
 
 .timeline-item.left .timeline-content {
-  background-color: #7FB069;
+  background-color: #C2F0A3;
   margin-right: calc(50% + 100px);
 }
 
 .timeline-item.right .timeline-content {
-  background-color: #E6AA68;
+  background-color: #C2F0A3;
   margin-left: calc(50% + 100px);
 }
 
@@ -76,11 +76,11 @@
 }
 
 .timeline-item.left .timeline-content h3 {
-  color: #02020B;
+  color: #262626;
 }
 
 .timeline-item.right .timeline-content h3 {
-  color: #02020B;
+  color: #262626;
 }
 
 .timeline-content h4 {
@@ -121,7 +121,7 @@
 }
 
 .timeline-item.left .achievements p {
-  color: #02020B;
+  color: #262626;
 }
 
 .timeline-item.right .achievements p {
@@ -134,7 +134,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 60px;
-  background-color: #2196F3;
+  background-color: #f1c40f;
   border: 4px solid #02020B;
   border-radius: 50%;
   display: flex;
