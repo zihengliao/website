@@ -12,7 +12,7 @@ const NavBar = () => {
       <ul className="nav-links">
         <li><HashLink smooth to="/#experience">Experience</HashLink></li>
         <li><HashLink smooth to="/#projects">Projects</HashLink></li>
-        <li><HashLink smooth to="/#contact">Contact Me</HashLink></li>
+        <li><HashLink smooth to="/#contact">Contact</HashLink></li>
         <li><Link to="/blog">Blog</Link></li>
       </ul>
     </nav>
