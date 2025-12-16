@@ -38,7 +38,7 @@ const Projects = () => {
       <div className="projects-header">
         <h2>My Projects</h2>
         <p className="projects-description">
-          I love to create things, and I'm always working on something new! You can view some of my favorite projects below.
+          I love to create things, and I'm always working on something new! You can view some of my favorite projects on GitHub below.
         </p>
       </div>
       
