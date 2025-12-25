@@ -17,7 +17,7 @@ const CsvTable = ({ src }) => {
   if (!data.length) return null;
 
   return (
-    <div className="table-wrapper">
+    <div className="csv-table-wrapper">
       <table>
         <thead>
           <tr>
