@@ -7,6 +7,7 @@ import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
 import "katex/dist/katex.min.css";
 import "./BlogPost.css";
+import CsvTable from "./CsvTable";
 
 const BlogPost = () => {
   const { id } = useParams();
@@ -40,6 +41,16 @@ const BlogPost = () => {
       <ReactMarkdown
         remarkPlugins={[remarkGfm, remarkMath]}
         rehypePlugins={[rehypeRaw, rehypeKatex]}
+        components={{
+          table: ({ node, ...props }) => (
+            <div className="table-wrapper">
+              <table {...props} />
+            </div>
+          ),
+          csvtable: ({ node, ...props }) => (
+            <CsvTable src={props.src} />
+          )
+        }}
       >
         {content}
       </ReactMarkdown>
