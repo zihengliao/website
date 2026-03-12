@@ -55,7 +55,7 @@ borrowing money
 
 Going back to the relationship. Think of it like this.
 
-Imagine inflation being the population of fish. Fish population rises and falls according to seasons alongside the predators that gobble it up. The predator here being the shark which represents interest rates. And as we've seen hisotrically, as interest rates (shark population) go up, inflation (fish) goes down.
+Imagine inflation being the population of fish. Fish population rises and falls according to seasons alongside the predators that gobble it up. The predator here being the shark which represents interest rates. And as we've seen historically, as interest rates (shark population) go up, inflation (fish) goes down.
 
 Now the question is, how do we simulate this?
 
